@@ -70,10 +70,10 @@ Koffer Engine Bundle:
     koffer bundle --plugin collector-infra@v1.0
 
   Example - All plugins from tag v1.0 by default
-    koffer bundle --git-ref v1.0 --plugin collector-infra --plugin collector-apps
+    koffer bundle --version v1.0 --plugin collector-infra --plugin collector-apps
 
-  Example - Default to tag v1.0 but use master on Apps
-    koffer bundle --git-ref v1.0 --plugin collector-infra --plugin collector-apps@master
+  Example - Default to tag v1.0 but use master branch on Apps
+    koffer bundle --version v1.0 --plugin collector-infra --plugin collector-apps@master
 `,
 	Run: func(cmd *cobra.Command, args []string) {
 		core()
