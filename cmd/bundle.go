@@ -103,7 +103,6 @@ func core() {
 	// sparta config
 	defaultConfig := config.DefaultConfig()
 	kofferConfig := defaultConfig.Koffer
-
 	if spartaConfig != nil {
 		kofferConfig = spartaConfig.Koffer
 	}
