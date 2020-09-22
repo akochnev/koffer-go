@@ -58,7 +58,7 @@ func init() {
 	// Define flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
-	rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", defaultConfigFile, "Full path to configuration file")
+//  rootCmd.PersistentFlags().StringVarP(&cfgFile, "config", "c", defaultConfigFile, "Full path to configuration file")
 
 	// Define S3 configuration flags for use if the configuration file is stored in s3
 	rootCmd.PersistentFlags().String(config.ViperS3Secret, "", "The S3 Secret to use")
